@@ -5,8 +5,6 @@ Trace-TCPHalfOpen
 Use NETSTAT to monitor for TCP sessions with status SYN_SENT. This can help identifying processes trying to connect to unreachable remote hosts. To terminate the script, use ctrl-c.
 .EXAMPLE
 .\Trace-TCPHalfOpen.ps1
-.NOTES
-Add notes, if needed
 .LINK
 https://github.com/rysstad
 .LINK
