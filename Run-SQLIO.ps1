@@ -154,4 +154,4 @@ Remove-Item -Path $sqliotestfile -Force -ErrorAction Continue
 Parse-SQLIOOutputWriteToCSV -sqlioResult $sqlioResult -sqliBuffer $sqliBuffer -testDuration $testDuration -sqlioTestFileSizeGB $sqlioTestFileSizeGB -sqlioReadOrWrite $sqlioReadOrWrite
 $sqlioResultTime = (Get-Date -Format "yyyy-MM-dd_HH-mm-ss").ToString()
 $sqlioResultFile = "c:\temp\sqlioResult_$sqlioResultTime.log"
-$sqlioResult | Out-File
+$sqlioResult | Out-File -FilePath $sqlioResultFile
