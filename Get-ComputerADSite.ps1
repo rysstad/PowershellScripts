@@ -1,0 +1,1 @@
+[DirectoryServices.ActiveDirectory.ActiveDirectorySite]::GetComputerSite().Name

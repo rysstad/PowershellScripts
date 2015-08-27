@@ -1,0 +1,1 @@
+Get-WmiObject Win32_PnPSignedDriver | Select-Object DeviceName, DriverVersion
