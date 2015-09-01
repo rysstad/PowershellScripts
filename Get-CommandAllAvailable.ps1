@@ -1,1 +1,0 @@
-Get-Command -All | Select-Object Name, CommandType, ModuleName, PSSnapIn, HelpUri 
