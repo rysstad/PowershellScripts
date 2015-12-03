@@ -1,0 +1,8 @@
+# Had som trouble with a timeout-error when starting the VMware vSphere Client 
+# on a computer without access to the internet.
+# probably related to a certificate revokation check..
+# Wrote this script to extend the timeout instead of fixing the problem.. 
+$registryPath = "HKCU:\Software\VMware\VMware Infrastructure Client\Preferences"
+$Name = "CLIENT_CMD_TIMEOUT"
+$value = "300"
+New-ItemProperty -Path $registryPath -Name $name -Value $value -PropertyType String -Force 
