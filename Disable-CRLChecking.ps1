@@ -12,4 +12,3 @@ foreach ($userKey in $HKEYUSERS) {
         }
     } 
 
-#
