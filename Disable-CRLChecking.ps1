@@ -11,3 +11,5 @@ foreach ($userKey in $HKEYUSERS) {
             Set-ItemProperty -Path $RegPath -Name "State" -Value 146944
         }
     } 
+
+    
